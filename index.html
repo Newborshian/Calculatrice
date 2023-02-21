@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+
 </head>
+
 <body>
-    <div class="calculatrice">
-        <div class="ecran">
-            Mouhahaha
+    <div class="parent">
+        <div class="div1">
+            <input id="resultats">
         </div>
-            <div class="parent">
-                <div class="div1">
-                    <button>1</button>
-                </div>
-                <div class="div2"> 
-                    <button>2</button>
-                </div>
-                <div class="div3"> 
-                    <button>3</button>
-                </div>
-                <div class="div4"> 
-                    <button>+</button>
-                </div>
-                <div class="div5"> 
-                    <button>-</button>
-                </div>
-                <div class="div6"> 
-                    <button>6</button>
-                </div>
-                <div class="div7"> 
-                    <button>5</button>
-                </div>
-                <div class="div8"> 
-                    <button>4</button>
-                </div>
-                <div class="div9"> 
-                    <button>7</button>
-                </div>
-                <div class="div10"> 
-                    <button>8</button>
-                </div>
-                <div class="div11"> 
-                    <button>9</button>
-                </div>
-                <div class="div12"> 
-                    <button>*</button>
-                </div>
-                <div class="div13"> 
-                    <button>)</button>
-                </div>
-                <div class="div14"> 
-                    <button>/</button>
-                </div>
-                <div class="div15"> 
-                    <button>(</button>
-                </div>
-                <div class="div16"> 
-                    <button>c</button>
-                </div>
-                <div class="div17"> 
-                    <button>0</button>
-                </div>
-                <div class="div18"> 
-                    <button>.</button>
-                </div>
-                <div class="div19"> 
-                    <button>=</button>
-                </div>
-            </div>
-</div>
+        <div class="div2" onclick="ajouter('1')">
+            <button>1</button>
+        </div>
+        <div class="div3" onclick="ajouter('2')">
+            <button>2</button>
+        </div>
+        <div class="div4" onclick="ajouter('3')">
+            <button>3</button>
+        </div>
+        <div class="div5" onclick="ajouter('+')">
+            <button>+</button>
+        </div>
+        <div class="div7" onclick="ajouter('4')">
+            <button>4</button>
+        </div>
+        <div class="div8" onclick="ajouter('5')">
+            <button>5</button>
+        </div>
+        <div class="div9" onclick="ajouter('6')">
+            <button>6</button>
+        </div>
+        <div class="div10" onclick="ajouter('-')">
+            <button>-</button>
+        </div>
+        <div class="div12" onclick="ajouter('7')">
+            <button>7</button>
+        </div>
+        <div class="div13" onclick="ajouter('8')">
+            <button>8</button>
+        </div>
+        <div class="div14" onclick="ajouter('9')">
+            <button>9</button>
+        </div>
+        <div class="div15" onclick="ajouter('*')">
+            <button>*</button>
+        </div>
+        <div class="div17">
+            <button onclick="supprimer()">c</button>
+        </div>
+        <div class="div18">
+            <button value="(" onclick="ajouter(value)">(</button>
+        </div>
+        <div class="div19">
+            <button value=")" onclick="ajouter(value)">)</button>
+        </div>
+        <div class="div20" onclick="ajouter('/')">
+            <button>/</button>
+        </div>
+        <div class="div22" onclick="ajouter('0')">
+            <button>0</button>
+        </div>
+        <div class="div23" onclick="ajouter('.')"><button>.</button>
+        </div>
+        <div class="div24" onclick="calculer()">
+            <button>=</button>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
